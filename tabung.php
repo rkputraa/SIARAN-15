@@ -1,6 +1,6 @@
 <?php
   class luas{
-    private $phi=3.14;
+    private $phi=3.14;     
     private $r;
     private $t;
 
