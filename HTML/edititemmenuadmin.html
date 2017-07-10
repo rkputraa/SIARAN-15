@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Restoran</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div id="kepalakiri" class="col-md-2">
+		<img src="img/logo.png"></img>
+	</div>
+	<div id="kepalakanan" class="col-md-10">
+		<h2><strong>Sistem Informasi Restoran</strong></h2>
+		<h2><strong>WAR RESTO</h2>
+	</div>
+</div>
+<div id="baris-dua" class="row">
+			<div id="menu" class="col-md-12">
+					<a href="index.html" id="logout">Logout</a>
+					<a href="profiladmin.html">Profil</a>
+			</div>
+		</div>
+<div class="row">
+	<div class="col-md-2" id="leftbar">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				    <li class="active"><a href="#">Halaman Admin</a></li>
+				    <li><a href="olahuseradmin.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Olah Data User</a></li>
+					<li><a href="olahgudangadmin.html"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Data Barang</a>
+					<ul>
+					<li><a href="adminbrg.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Data Barang</a></li>
+					<li><a href="adminbrgmsk.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Barang Masuk</a></li>
+					<li><a href="adminbrgklr.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Barang Keluar</a></li>
+					</ul>
+					</li>
+					<br><br><br><li><a href="olahmemberadmin.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Data Member</a></li>
+					 <li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Olah Data Menu</a>
+					<ul>
+					<li><a href="olahitemmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Item Menu</a></li>
+					<li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Jenis Menu</a></li>
+					</li>
+					</ul>
+				</ul>				
+			</div>
+	<div id="rightmid" class="col-md-10">
+		<h3>Edit Menu WAR Resto</h3>
+		<form class="form-horizontal">
+		 <div class="form-group">
+    <label for="inputjenis" class="col-sm-2 control-label">Nama Jenis</label>
+    <div class="col-sm-4">
+     <select class="form-control">
+	  <option>Pilih Nama Jenis</option>
+	  <option>Makanan Berat</option>
+	  <option>Minuman</option>
+	  <option>Makanan Ringan</option>
+</select>
+    </div>
+	</div>
+  <div class="form-group">
+    <label for="inputnamaitem" class="col-sm-2 control-label">Nama Item</label>
+    <div class="col-sm-4">
+      <input type="namaitem" class="form-control" id="inputnamaitem" value="Ayam Cabai Ijo">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputharga" class="col-sm-2 control-label">Harga</label>
+    <div class="col-sm-4">
+      <input type="harga" class="form-control" id="inputharga" value="18000">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+     <a href="olahitemmenuadmin.html"><button type="button" class="btn btn-default">Submit</button></a>
+    </div>
+  </div>
+</form>
+	</div>
+
+	</div>
+	<div id="footer" class="col-md-12">
+		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
+	</div>
+</div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+$(function(){
+$('#logout').click(function(){
+	if(confirm('Yakin Mau Keluar?')){
+	return true;
+	}
+	return false;
+	
+}
+});
+</body>
+</html>

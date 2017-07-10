@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Restoran</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div id="kepalakiri" class="col-md-2">
+		<img src="img/logo.png"></img>
+	</div>
+	<div id="kepalakanan" class="col-md-10">
+		<h2><strong>Sistem Informasi Restoran</strong></h2>
+		<h2><strong>WAR RESTO</h2>
+	</div>
+</div>
+<div id="baris-dua" class="row">
+			<div id="menu" class="col-md-12">
+					<a href="index.html">Logout</a>
+					<a href="profilkasir.html">Profil</a>
+			</div>
+		</div>
+<div class="row">
+	<div class="col-md-2" id="leftbar">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				    <li class="active"><a href="#">Halaman Kasir</a></li>
+				    <li><a href="datamemberkasir.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Olah Data Member</a></li>
+				    <li><a href="transaksikasir.html"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> Transaksi</a></li>
+
+				</ul>				
+			</div>
+	<div id="rightmid" class="col-md-10">
+		<h3>Data Member WAR Resto</h3>
+		<h5><a href="kasirtambahmember.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Create Member</a></h5>
+		<table class="table table-bordered" width="100% cellspacing="0" cellpadding="10" border-color="white">
+		<tr>
+		<th align="center">No</th>
+		<th>Id Member</th>
+		<th>Nama member</th>
+		<th>Action</th>
+		</tr>
+		<tr>
+		<td>1</td>
+		<td>2002</td>
+		<td>Febri Andrian</td>
+		<td> <a href="detailmemberkasir.html">
+			<button type="button" class="btn btn-info">Lihat</button>
+			<a href="editmemberkasir.html">
+			<button type="button" class="btn btn-warning">Edit</button>
+		<a href="#">
+			<button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td>
+		</tr>
+		<tr>
+		<td>2</td>
+		<td>2003</td>
+		<td>Zafran Fitrah</td>
+		<td> <a href="detailmemberkasir.html">
+			<button type="button" class="btn btn-info">Lihat</button>
+			<a href="editmemberkasir.html">
+			<button type="button" class="btn btn-warning">Edit</button>
+		<a href="#">
+			<button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td>
+		</tr>
+		</table>
+	</div>
+	<div id="footer" class="col-md-12">
+		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
+	</div>
+	<script>
+		function tombol() {
+		confirm("Apakah anda setuju?");
+		}
+	</script>
+</div>
+</div>
+</body>
+</html>

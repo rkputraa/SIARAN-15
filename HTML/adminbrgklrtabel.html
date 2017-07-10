@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Restoran</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div id="kepalakiri" class="col-md-2">
+		<img src="img/logo.png"></img>
+	</div>
+	<div id="kepalakanan" class="col-md-10">
+		<h2><strong>Sistem Informasi Restoran</strong></h2>
+		<h2><strong>WAR RESTO</h2>
+	</div>
+</div>
+<div id="baris-dua" class="row">
+			<div id="menu" class="col-md-12">
+					<a href="index.html">Logout</a>
+					<a href="profiladmin.html">Profil</a>
+			</div>
+		</div>
+<div class="row">
+		<div class="col-md-2" id="leftbar">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				    <li class="active"><a href="#">Halaman Admin</a></li>
+				    <li><a href="olahuseradmin.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Olah Data User</a></li>
+					<li><a href="olahgudangadmin.html"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Data Barang</a>
+					<ul>
+					<li><a href="adminbrg.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Data Barang</a></li>
+					<li><a href="adminbrgmsk.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Barang Masuk</a></li>
+					<li><a href="adminbrgklr.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Barang Keluar</a></li>
+					</ul>
+					</li>
+					<br><br><br><li><a href="olahmemberadmin.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Data Member</a></li>
+					 <li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Olah Data Menu</a>
+					<ul>
+					<li><a href="olahitemmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Item Menu</a></li>
+					<li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Jenis Menu</a></li>
+					</li>
+					</ul>
+				</ul>				
+			</div>
+	<div id="rightmid" class="col-md-10">
+		<h3>Data Barang Keluar Gudang</h3>
+		<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputEmail2">Bulan</label>
+    <select class="form-control">
+	  <option>Januari</option>
+	  <option>Februari</option>
+	  <option>Maret</option>
+	  <option>April</option>
+	  <option>Mei</option>
+	  <option>Juni</option>
+	  <option>Juli</option>
+	  <option>Agustus</option>
+	  <option>September</option>
+	  <option>Oktober</option>
+	  <option>November</option>
+	  <option>Desember</option>
+</select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Tahun</label>
+   <select class="form-control">
+	  <option>2012</option>
+	  <option>2013</option>
+	  <option>2014</option>
+	  <option>2015</option>
+	  <option>2016</option>
+	  <option>2017</option>
+</select>
+  </div>
+  <a href="adminbrgklrtabel.html"><button type="button" class="btn btn-warning">Tampilkan</button></a>
+</form><br>
+		<br><table class="table table-bordered" width="100% cellspacing="0" cellpadding="10" border-color="white">
+		<tr>
+		<th align="center">No</th>
+		<th>Id Keluar</th>
+		<th>Nama Barang</th>
+		<th>Tanggal Keluar</th>
+		<th>Jumlah</th>
+		<th>Keterangan</th>
+		<th>Action</th>
+		</tr>
+		<tr>
+		<td>1</td>
+		<td>O001</td>
+		<td>Cabai Ijo</td>
+		<td>2016/12/27</td>
+		<td>5</td>
+		<td>Terpakai</td>
+		<td><a href="detailbrgklradmin.html">
+			<button type="button" class="btn btn-info">Lihat</button>
+			</td>
+		</tr>
+		<tr>
+		<td>2</td>
+		<td>O002</td>
+		<td>Syrup Sarang Tawon</td>
+		<td>2016/12/28</td>
+		<td>1</td>
+		<td>Rusak</td>
+		<td> <a href="detailbrgklradmin.html">
+			<button type="button" class="btn btn-info">Lihat</button>
+		</td>
+		</tr>
+		</table>
+	</div>
+	<div id="footer" class="col-md-12">
+		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
+	</div>
+</div>
+</div>
+</body>
+</html>

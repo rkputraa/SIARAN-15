@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Restoran</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div id="kepalakiri" class="col-md-2">
+		<img src="img/logo.png"></img>
+	</div>
+	<div id="kepalakanan" class="col-md-10">
+		<h2><strong>Sistem Informasi Restoran</strong></h2>
+		<h2><strong>WAR RESTO</h2>
+	</div>
+</div>
+<div id="baris-dua" class="row">
+			<div id="menu" class="col-md-12">
+					<a href="index.html">Logout</a>
+					<a href="profilkasir.html">Profil</a>
+			</div>
+		</div>
+<div class="row">
+	<div class="col-md-2" id="leftbar">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				    <li class="active"><a href="#">Halaman Kasir</a></li>
+				    <li><a href="datamemberkasir.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Olah Data Member</a></li>
+				    <li><a href="transaksikasir.html"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> Transaksi</a></li>
+
+				</ul>				
+			</div>
+	<div id="rightmidtransaksi" class="col-md-10">
+		<h2>Transaksi</h2>
+		<form>
+			<ul>
+				<li>
+					<label for="tanggal" class="col-md-2">Tanggal</label>
+					<input type="date" name="tanggal"></li>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<label for="idmember" class="col-md-2">ID Member</label>
+					<input type="text" name="idmember" size="16">
+				</li>
+			</ul>
+			<ul>
+				<li>
+				<label for="nomeja" class="col-md-2">Nomor Meja</label>
+				<select name="nomeja" id="nomeja">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</select></li>
+			</ul>
+		</form>
+		<div class="button col-md-2 buttontambah">
+			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Tambah Item</button>
+		</div>
+		<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<label for="namaitem"><h4>Nama Item</h4></label><br>
+					<select name="namaitem" id="namaitem">
+						<option value="a">Ayam Cabe ijo</option>
+						<option value="b">Teh es</option>
+						<option value="c">French Fries</option>
+					</select><br>
+					<label for="bitem"><h4>Banyaknya Item</h4></label><br>
+					<input type="bitem" name="bitem" size="13"><br>
+					<a href="transaksikasir2.html"><button type="button" class="btn btn-default">Tambah</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="footer" class="col-md-12">
+		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
+	</div>
+</div>
+</div>
+</body>
+</html>

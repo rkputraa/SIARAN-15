@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Restoran</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div id="kepalakiri" class="col-md-2">
+		<img src="img/logo.png"></img>
+	</div>
+	<div id="kepalakanan" class="col-md-10">
+		<h2><strong>Sistem Informasi Restoran</strong></h2>
+		<h2><strong>WAR RESTO</h2>
+	</div>
+</div>
+<div id="baris-dua" class="row">
+			<div id="menu" class="col-md-12">
+					<a href="index.html">Logout</a>
+					<a href="profillogistik.html">Profil</a>
+			</div>
+		</div>
+<div class="row">
+	<div class="col-md-2" id="leftbar">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				    <li class="active"><a href="#">Halaman Logistik</a></li>
+				    <li><a href="databaranggdg.html"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span>Data Barang</a></li>
+				    <li><a href="databarangmasukgdg.html"><span class="glyphicon glyphicon-import" aria-hidden="true"></span>Data Barang Masuk</a></li>
+					<li><a href="databarangkeluargdg.html"><span class="glyphicon glyphicon-export" aria-hidden="true"></span> Data Barang Keluar</a></li>
+					<li><a href="datasuppliergdg.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Data Supplier</a></li>
+				</ul>				
+			</div>
+	<div id="rightmid" class="col-md-10">
+	<h1>Edit Barang Masuk</h1>
+	<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputkodebarang" class="col-sm-2 control-label">Nama Barang</label>
+    <div class="col-sm-4">
+     <select class="form-control">
+	  <option>Pilih Nama Barang</option>
+	  <option>Cabai Ijo</option>
+	  <option>Syrup Sarang Tawon</option>
+	  <option>Panci High Size</option>
+	  <option>Chop Stick</option>
+</select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputtglmsk" class="col-sm-2 control-label">Tanggal Masuk</label>
+    <div class="col-sm-4">
+      <input type="date" class="form-control" id="inputtglmsk" placeholder="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="jumlah" class="col-sm-2 control-label">Jumlah</label>
+    <div class="col-sm-4">
+      <input type="jumlah" class="form-control" id="jumlah" value="25">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputtglexp" class="col-sm-2 control-label">Expired</label>
+    <div class="col-sm-4">
+      <input type="date" class="form-control" id="inputtglexp" placeholder="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputnamasupplier" class="col-sm-2 control-label">Nama Supplier</label>
+    <div class="col-sm-4">
+     <select class="form-control">
+	  <option>Pilih Nama Supplier</option>
+	  <option>PT. Indofood</option>
+	  <option>PT. Syrup Indonesia</option>
+	  <option>PT. Alat Masak Dapur</option>
+	  <option>PT. Cinta Tanah Air</option>
+</select>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+     <a href="databarangmasukgdg.html"><button type="button" class="btn btn-default">Submit</button></a>
+    </div>
+  </div>
+</form>
+	</div>
+	<div id="footer" class="col-md-12">
+		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
+	</div>
+</div>
+</div>
+</body>
+</html>

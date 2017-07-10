@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Restoran</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div id="kepalakiri" class="col-md-2">
+		<img src="img/logo.png"></img>
+	</div>
+	<div id="kepalakanan" class="col-md-10">
+		<h2><strong>Sistem Informasi Restoran</strong></h2>
+		<h2><strong>WAR RESTO</h2>
+	</div>
+</div>
+<div id="baris-dua" class="row">
+			<div id="menu" class="col-md-12">
+					<a href="index.html">Logout</a>
+					<a href="profillogistik.html">Profil</a>
+			</div>
+		</div>
+<div class="row">
+	<div class="col-md-2" id="leftbar">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				    <li class="active"><a href="#">Halaman Admin</a></li>
+				    <li><a href="olahuseradmin.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Olah Data User</a></li>
+					<li><a href="olahgudangadmin.html"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Data Barang</a>
+					<ul>
+					<li><a href="adminbrg.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Data Barang</a></li>
+					<li><a href="adminbrgmsk.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Barang Masuk</a></li>
+					<li><a href="adminbrgklr.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Barang Keluar</a></li>
+					</ul>
+					</li>
+					<br><br><br><li><a href="olahmemberadmin.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Data Member</a></li>
+					 <li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Olah Data Menu</a>
+					<ul>
+					<li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Item Menu</a></li>
+					<li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Jenis Menu</a></li>
+					</li>
+					</ul>
+				</ul>				
+			</div>
+	<div id="rightmid" class="col-md-10">
+	<h1>Tambah User</h1>
+	<form class="form-horizontal">
+  <div class="form-group">
+    <label for="username" class="col-sm-2 control-label">Username</label>
+    <div class="col-sm-4">
+      <input type="username" class="form-control" id="username" placeholder="Masukkan Username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="password" placeholder="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="nama" class="col-sm-2 control-label">Nama</label>
+    <div class="col-sm-4">
+      <input type="nama" class="form-control" id="nama" placeholder="Masukkan Nama">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputalamat" class="col-sm-2 control-label">Alamat</label>
+    <div class="col-sm-4">
+     <textarea class="form-control" rows="3">Masukkan Alamat</textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputjabatan" class="col-sm-2 control-label">Jabatan</label>
+    <div class="col-sm-4">
+     <select class="form-control">
+	  <option>Pilih Jabatan</option>
+	  <option>Kasir</option>
+	  <option>Admin</option>
+	  <option>Manajer</option>
+	  <option>Logistik Gudang</option>
+</select>
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputjk" class="col-sm-2 control-label">Jenis Kelamin</label>
+    <div class="col-sm-4">
+    <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Pria
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Wanita
+</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputtelepon" class="col-sm-2 control-label">Telepon</label>
+    <div class="col-sm-4">
+      <input type="telepon" class="form-control" id="inputtelepon" placeholder="Masukkan No.Telp">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+     <a href="olahuseradmin.html"><button type="button" class="btn btn-default">Submit</button></a>
+    </div>
+  </div>
+</form>
+	</div>
+	<div id="footer" class="col-md-12">
+		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Restoran</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div id="kepalakiri" class="col-md-2">
+		<img src="img/logo.png"></img>
+	</div>
+	<div id="kepalakanan" class="col-md-10">
+		<h2><strong>Sistem Informasi Restoran</strong></h2>
+		<h2><strong>WAR RESTO</h2>
+	</div>
+</div>
+<div id="baris-dua" class="row">
+			<div id="menu" class="col-md-12">
+					<a href="index.html">Logout</a>
+					<a href="profillogistik.html">Profil</a>
+			</div>
+		</div>
+<div class="row">
+	<div class="col-md-2" id="leftbar">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				    <li class="active"><a href="#">Halaman Logistik</a></li>
+				    <li><a href="databaranggdg.html"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span>Data Barang</a></li>
+				    <li><a href="databarangmasukgdg.html"><span class="glyphicon glyphicon-import" aria-hidden="true"></span>Data Barang Masuk</a></li>
+					<li><a href="databarangkeluargdg.html"><span class="glyphicon glyphicon-export" aria-hidden="true"></span> Data Barang Keluar</a></li>
+					<li><a href="datasuppliergdg.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Data Supplier</a></li>
+				</ul>				
+			</div>
+	<div id="rightmid" class="col-md-10">
+	<h1>Tambah Barang</h1>
+	<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputkodebarang" class="col-sm-2 control-label">Kode Barang</label>
+    <div class="col-sm-4">
+      <input type="barang" class="form-control" id="inputkodebarang" placeholder="Masukkan Kode Barang">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputnamabarang" class="col-sm-2 control-label">Nama Barang</label>
+    <div class="col-sm-4">
+      <input type="namabarang" class="form-control" id="inputnamabarang" placeholder="Masukkan Nama Barang">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputsatuan" class="col-sm-2 control-label">Satuan</label>
+    <div class="col-sm-4">
+      <input type="satuan" class="form-control" id="inputsatuan" placeholder="Masukkan Satuan Barang">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+     <a href="databaranggdg.html"><button type="button" class="btn btn-default">Submit</button></a>
+    </div>
+  </div>
+</form>
+	</div>
+	<div id="footer" class="col-md-12">
+		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
+	</div>
+</div>
+</div>
+</body>
+</html>
