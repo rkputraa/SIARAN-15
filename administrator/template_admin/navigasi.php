@@ -2,7 +2,7 @@
 <div class="container-fluid">
 <div class="row">
 	<div id="kepalakiri" class="col-md-2">
-		<img src="img/logo.png"></img>
+		<img src="template_admin/img/logo.png"></img>
 	</div>
 	<div id="kepalakanan" class="col-md-10">
 		<h2><strong>Sistem Informasi Restoran</strong></h2>
