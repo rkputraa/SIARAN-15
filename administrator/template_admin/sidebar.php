@@ -14,7 +14,7 @@
 					<br><br><br><li><a href="olahmemberadmin.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Data Member</a></li>
 					 <li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Olah Data Menu</a>
 					<ul>
-					<li><a href="olahitemmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Item Menu</a></li>
+					<li><a href="lihat_data_menu.php"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Item Menu</a></li>
 					<li><a href="olahmenuadmin.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Jenis Menu</a></li>
 					</li>
 					</ul>
