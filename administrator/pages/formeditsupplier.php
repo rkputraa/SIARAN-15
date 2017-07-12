@@ -1,6 +1,6 @@
-	<div id="rightmid" class="col-md-10">
-	<h1>Edit Supplier</h1>
-	<form class="form-horizontal" action="aksiubahsup.php?id=<?php echo $data['id_supplier']; ?>" method = "POST">
+  <div id="rightmid" class="col-md-10">
+  <h1>Edit Supplier</h1>
+  <form class="form-horizontal" action="aksiubahsup.php?id=<?php echo $data['id_supplier']; ?>" method = "POST">
   <div class="form-group">
     <label for="inputnmsupplier" class="col-sm-2 control-label">Nama Supplier</label>
     <div class="col-sm-4">

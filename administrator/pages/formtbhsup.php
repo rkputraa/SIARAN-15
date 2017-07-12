@@ -1,6 +1,6 @@
-	<div id="rightmid" class="col-md-10">
-	<h1>Tambah Supplier</h1>
-	<form class="form-horizontal" action="aksi_tambahsup.php" method="POST">
+  <div id="rightmid" class="col-md-10">
+  <h1>Tambah Supplier</h1>
+  <form class="form-horizontal" action="aksi_tambahsup.php" method="POST">
   <div class="form-group">
     <label for="inputnmsupplier" class="col-sm-2 control-label">Id Supplier</label>
     <div class="col-sm-4">
