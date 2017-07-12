@@ -28,8 +28,8 @@ class MenuControl extends Controller
 		$id = $_GET['id'];
 		include_once 'model/Menu.php';
 		include_once 'model/JenisMenu.php';
-		$mbm = new Jenis_item();
-		$jm = new Jenis_menu();
+		$mbm = new Menu();
+		$jm = new JenisMenu();
 		$data['jenis_item'] = $mbm->ambilDataMenu($id);
 		$data['jenis_menu'] = $jm->getDaftarJenisMenu();
 		return $data;
@@ -38,13 +38,23 @@ class MenuControl extends Controller
 	public function updateDataMenu()
 	{
 		include_once 'model/Menu.php';
-		$mbm = new Jenis_item();
+		$mbm = new Menu();
 		$id_item = $_GET['id'];
 		$nama = $_POST['nama_item'];
 		$harga = $_POST['harga'];
-		$id_jenis = $_POST['jenis_menu'];
-		$mb -> updateDataMenu($id_item,$nama,$harga,$id_jenis);
+		$id_jenis = $_POST['id_jenis'];
+		$mbm -> updateDataMenu($id_item,$nama,$harga,$id_jenis);
 		return $true;
+	}
+
+	public function hapusMenu()
+	{
+		include_once 'model/Menu.php';
+		$mb= new Menu();
+		$id_item = $_GET['id'];
+		$mb->hapusMenu($id_item);
+		
+		return true;
 	}
 
 

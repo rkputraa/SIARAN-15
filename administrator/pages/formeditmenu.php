@@ -4,7 +4,7 @@
 		 <div class="form-group">
     <label for="inputjenis" class="col-sm-2 control-label">Nama Jenis</label>
     <div class="col-sm-4">
-     <select class="form-control">
+     <select name="id_jenis" class="form-control">
 	  <?php foreach ($data_jenismenu as $jm): ?>
       
     <br>  <option value="<?php echo $jm['id_jenis'] ?>" 
@@ -14,7 +14,7 @@
       # code...
     }
     ?>
-    ><?php echo $jm['nama_jenis'] ?></option>
+    ><?php echo $jm['jenis_menu'] ?></option>
     <?php endforeach ?>
 </select>
     </div>
@@ -33,7 +33,7 @@
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-     <a href="olahitemmenuadmin.html"><button type="button" class="btn btn-default">Submit</button></a>
+     <input type="submit" class="btn btn-default" value="submit">
     </div>
   </div>
 </form>

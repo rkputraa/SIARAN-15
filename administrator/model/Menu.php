@@ -18,13 +18,12 @@ class Menu extends Model
 		return $data;
 	}
 
-	public function setMenu($id_jenis,$id_item,$nama_item,$harga)
+	public function setMenu($id_jenis,$nama_item,$harga)
 	{
 		try
 		  {
-		   $stmt = $this->db->prepare("INSERT INTO jenis_item(id_jenis,id_item,nama_item,harga) VALUES(:id_jenis, :id_item, :nama_item, :harga)");
+		   $stmt = $this->db->prepare("INSERT INTO jenis_item(id_jenis,nama_item,harga) VALUES(:id_jenis, :nama_item, :harga)");
 		   $stmt->bindparam(":id_jenis",$id_jenis);
-		   $stmt->bindparam(":id_item",$id_item);
 		   $stmt->bindparam(":nama_item",$nama_item);
 		   $stmt->bindparam(":harga",$harga);
 		   $stmt->execute();
@@ -68,6 +67,22 @@ try {
 catch(PDOException $e) {
 	echo $e->getMessage(); 
 }
+	}
+
+	public function hapusMenu($id_item)
+	{
+		
+		
+		try {
+			$stmt = $this->db->prepare("DELETE FROM jenis_item WHERE id_item=:id_item");
+		   $stmt->bindparam(":id_item",$id_item);
+			$stmt->execute();
+			echo "Berhasil diDelete";
+			
+		}
+		catch(PDOException $e) {
+			echo $e->getMessage(); 
+		}
 	}
 }
 
