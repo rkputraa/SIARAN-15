@@ -53,5 +53,23 @@ class Supplier extends Model
 		echo $e->getMessege();
 	}
 	}
+	public function ubahSupplier($id_supplier,$nama_supplier,$alamat,$telepon)
+	{
+		
+		
+		try {
+			$stmt = $this->db->prepare("UPDATE supplier SET id_supplier=:id_supplier, nama_supplier=:nama_supplier, alamat=:alamat, telepon=:telepon WHERE id_supplier=:id_supplier");
+		   $stmt->bindparam(":id_supplier",$id_supplier);
+		   $stmt->bindparam(":nama_supplier",$nama_supplier);
+		   $stmt->bindparam(":alamat",$alamat);
+		   $stmt->bindparam(":telepon",$telepon);
+			$stmt->execute();
+			echo "Supplier berhasil di update!";
+			
+		}
+		catch(PDOException $e) {
+			echo $e->getMessage(); 
+		}
+	}
 }
 ?>

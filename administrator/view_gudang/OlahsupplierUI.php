@@ -33,13 +33,17 @@ class OlahsupplierUI extends View
 		include_once 'controller/SiaranManager.php';
 		$bm = new SiaranManager();
 		$data = $bm->getDataUntukPerubahan();
-		$data_supplier = $data['nama_supplier'];
-		$data_alamat = $data['alamat'];
-		$data_telepon = $data['telepon'];
 		include_once 'pages/formeditsupplier.php';
 		$this->end();
 	}
-
+	public function aksiUbahSupplier()
+	{
+		include_once 'controller/SiaranManager.php';
+		$bm= new SiaranManager();
+		$bm->ubahSupplier();
+		// include_once 'pages/pesansukses.php';
+		$this->end();
+	}
 }
 
  ?>
