@@ -1,5 +1,8 @@
 <div id="rightmid" class="col-md-10">
 <h1>Supplier</h1>
+<h5><a href="tambahsupplier.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Create Supplier</a></h5>
+		<table class="table table-bordered width="100% "border="3" cellspacing="0" cellpadding="10" border-color="white">
+
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -24,7 +27,7 @@
 			<td><?= $su['telepon'] ?></td>
 			<td><?= $su['id_user'] ?></td>
 			<td><a href="editdatasupplier.php?id=<?= $su['id_supplier'] ?>"><button type="button" class="btn btn-warning">Edit</button></a>
-			<button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td>
+			<a href="#"><button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td></a>
 		</tr>
 		<?php 
 		$i++;
