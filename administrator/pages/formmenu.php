@@ -4,7 +4,7 @@
 		 <div class="form-group">
     <label for="inputjenis" class="col-sm-2 control-label">Nama Jenis</label>
     <div class="col-sm-4">
-     <select name="jenismenu" id="jenismenu" class="form-control">
+     <select name="id_jenis" id="jenismenu" class="form-control">
      <?php foreach ($daftar_jenismenu as $dj): ?>
             <option value="<?php echo $dj['id_jenis'] ?>"><?php echo $dj['jenis_menu'] ?></option>
           <?php endforeach ?>
@@ -14,13 +14,13 @@
   <div class="form-group">
     <label for="inputnamaitem" class="col-sm-2 control-label">Nama Item</label>
     <div class="col-sm-4">
-      <input type="namaitem" class="form-control" id="inputnamaitem" placeholder="Masukkan Item Menu">
+      <input name="nama_item" class="form-control" id="inputnamaitem" placeholder="Masukkan Item Menu">
     </div>
   </div>
   <div class="form-group">
     <label for="inputharga" class="col-sm-2 control-label">Harga</label>
     <div class="col-sm-4">
-      <input type="harga" class="form-control" id="inputharga" placeholder="Masukkan harga">
+      <input name="harga" class="form-control" id="inputharga" placeholder="Masukkan harga">
     </div>
   </div>
   <div class="form-group">

@@ -24,7 +24,7 @@ $i = 1;
 			<td><?= $ib['harga']?></td>
 			<td><a href="detailitemmenuadmin.html">
 			<button type="button" class="btn btn-info">Lihat</button>
-			<a href="ubah_berita.php?id=<?php echo $ib['id_item']?>">
+			<a href="ubah_menu.php?id=<?php echo $ib['id_item']?>">
 			<button type="button" class="btn btn-warning">Edit</button></a>
 		<a href="#">
 			<button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td>

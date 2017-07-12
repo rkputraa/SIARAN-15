@@ -41,6 +41,30 @@ class MenuUI extends View
 		$this->end();
 	}
 	
+	public function tampilFormEdit()
+	{
+		include_once 'controller/MenuControl.php';
+
+		$mm = new MenuControl();
+		$data = $mm->getDataUntukPerubahan();
+		$data_menu = $data['jenis_item'];
+		$data_jenismenu = $data['jenis_menu'];
+		include_once 'pages/formeditmenu.php';
+		$this->end();
+
+	}
+
+	public function editDataMenu()
+	{
+		include_once 'controller/MenuControl.php';
+
+		$mm = new MenuControl();
+		$mm->updateDataMenu();
+		include_once 'pages/pesansukses.php';
+		$this->end();
+	}
+
+
 }
 
 

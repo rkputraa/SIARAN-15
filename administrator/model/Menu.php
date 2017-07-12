@@ -22,7 +22,7 @@ class Menu extends Model
 	{
 		try
 		  {
-		   $stmt = $this->db->prepare("INSERT INTO (id_jenis,id_item,nama_item,harga) VALUES(:id_jenis, :id_item, :nama_item, :harga)");
+		   $stmt = $this->db->prepare("INSERT INTO jenis_item(id_jenis,id_item,nama_item,harga) VALUES(:id_jenis, :id_item, :nama_item, :harga)");
 		   $stmt->bindparam(":id_jenis",$id_jenis);
 		   $stmt->bindparam(":id_item",$id_item);
 		   $stmt->bindparam(":nama_item",$nama_item);
@@ -35,6 +35,39 @@ class Menu extends Model
 		   echo $e->getMessage(); 
 		   return false;
 		  }
+	}
+
+	public function ambilDataMenu($id)
+	{
+
+try {
+	$stmt = $this->db->prepare("SELECT * FROM jenis_item WHERE id_item=:id");
+	$stmt->bindparam(":id",$id);
+	$stmt->execute();
+	$data = $stmt->fetch();
+	return $data;
+}
+catch(PDOException $e) {
+	echo $e->getMessage(); 
+	return false;
+}
+	}
+
+	public function updateDataMenu($id_item,$nama,$harga,$id_jenis)
+	{
+//mengambil data menu
+try {
+	$stmt = $this->db->prepare("UPDATE jenis_item SET nama_item=:nama_item, harga=:harga, id_jenis=:jenis_menu WHERE id_item=:id_item");
+	$stmt->bindparam(":id_item",$id_item);
+	$stmt->bindparam(":jenis_menu",$id_jenis);
+	$stmt->bindparam(":harga",$harga);
+	$stmt->bindparam(":nama_item",$nama);
+	$stmt->execute();
+	//echo "Congratulation, U Can change it Dude";
+}
+catch(PDOException $e) {
+	echo $e->getMessage(); 
+}
 	}
 }
 
