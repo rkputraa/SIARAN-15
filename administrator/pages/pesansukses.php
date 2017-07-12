@@ -1,1 +1,1 @@
-<h2>Selamat anda telah sukses menampilkan beritanyaa</h2>
+<h2>Selamat Input Sukses</h2>

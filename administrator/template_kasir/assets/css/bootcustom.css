@@ -1,0 +1,382 @@
+#kepalakiri{
+	color: #000000;
+	height: 150px;
+	background-color: #ffa41c;
+}
+#kepalakiri img {
+	height: 150px;
+	padding-bottom:10px;
+	padding-left: 20px;
+}
+#kepalakanan{
+	color: #262524;
+	text-align: left;
+	height: 150px;
+	background-color: #ffa41c;
+	font-size: 20px;
+	font-family: arial;
+	font-weight: bold;
+	padding-left:1px;
+}
+#kepalakanan h2{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: broadway;
+}
+#secondtop{
+	color: #000000;
+	height: 30px;
+	background-color: #ffa41c;
+}
+#leftbar{
+	color: #ffa41c;
+	background-color: #262524;
+	height: 512px;
+}
+#leftbar h4 {
+	font-size: 30px;
+	font-family: agency fb;
+	text-align: center;
+	font-weight: bold;
+	background-color:#2e75ef;
+}
+#leftbar h5 {
+	font-size: 20px;
+	font-family: agency fb;
+	text-align: center;
+	font-weight: bold;
+}
+#leftbar a {
+	float: center;
+}
+#rightmid{
+	color: #ffffff;
+	height: 512px;
+	background :url(../../img/bgkonten.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+}
+#rightmid form{
+	color:#ffffff;
+	padding-top:20px;
+	font-size:20px;
+}
+#rightmid h1{
+	padding-left:25px;
+	font-family: high tower text;
+	font-weight:bold;
+	font-size:40px;
+}
+#rightmid h3{
+	font-family: high tower text;
+	font-weight: bold;
+	font-size: 40px;
+	text-decoration: underline;
+}
+#rightmid h5{
+float: right;
+font-weight:bold;
+font-size:17px;
+}
+#rightmid a{
+	color:#2e75ef;
+
+}
+#rightmid img{
+	float: center;
+	height: 30px;
+	padding-right:5px;
+}
+#rightmidprofil {
+	background:url(../../img/bgkonten.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+	height:512px;
+	padding-top:20px;
+}
+
+#rightmidprofil img{
+	float:left;
+}
+#rightmidprofil h4{
+	float:center;
+	margin-left:120px;	
+}
+#rightmidprofil h3{
+	float:center;
+	background-color:#2e75ef;
+	color:#000000;
+	padding-left:190px;
+}
+#rightmiddetail {
+	background:url(../../img/bgkonten.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+	height:512px;
+	padding-top:20px;
+}
+#rightmiddetail table{
+	padding-left:150px;
+	font-size:26px;
+	font-family: agency fb;
+	background-color:#838484;
+	color:#143363;
+}
+#rightmiddetail h3{
+	float:center;
+	background-color:#2e75ef;
+	color:#000000;
+	padding-left:150px;
+	font-family:agency fb;
+	font-size:30px;
+}
+#footer{
+	color: #000000;
+	background-color: #ffa41c;
+	height: 40px;
+	font-weight:bold;
+}
+#barang th{
+	align=center;
+}
+#secondtop a{
+	color: #000000;
+}
+#secondtop .secondtop1{
+	margin-left: 86%;
+}
+#secondtop .secondtop2{
+	margin-left: 92%;
+}
+#leftbar li{
+	text-align: left;
+	list-style-type: none;
+	margin-top: 5px;	
+}
+#leftbar a{
+	color: #e0b24e;
+}
+#footer h5{
+	margin-left: 0%;
+	align: center;
+	text-align: center;
+}
+#headerindext{
+	background: url(../../resto2.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+	height: 600px;
+}
+#headerindext a{
+	color: #e0b24e;
+}
+#headerindext1 {
+	margin-top: 90px;
+}
+#headerindext2 {
+	margin-top: 106px;
+}
+#buttonindext{
+	margin-top: 18%;
+	padding-left: 40%;
+	font-family: algerian;
+}
+#tentang{
+	margin-top: 15%;
+	padding-left: 9%;
+}
+#tentang button{
+	background-color:#2a3a54;
+	color:#ffffff;
+	border-color:#000000;
+}
+#bgbgbg{
+	background: url(../../resto2.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+	height:550px;
+}
+#headerindext1 h3{
+	margin-left: 24%;
+}
+#buttonindext button{
+	margin-left: 8px;
+	color: #101526;
+	background-color: #eace44;
+	border-color: #000000;
+	font-size:40px;
+
+	
+}
+#footerindext{
+	color: #c1c1c1;
+	background-color: #000000;
+	height: 40px;
+	text-align: center;
+}
+#headloginl{
+	background-color: #191919;
+	height: 100px;
+}
+#headtentang{
+	background-color: #191919;
+	height: 100px;
+
+}
+
+#headtentang img{
+	height:100px;
+	padding-bottom:5px;
+}
+#headtentang strong{
+	color:#ffffff;
+	font-size:50px;
+	font-weight:bold;
+	padding-top:40px;
+	float:bottom;
+	font-family: Freestyle Script;
+}
+
+#headloginr{
+	background-color: #191919;
+	height: 100px;
+}
+#headloginl h3{
+	color: #e0b24e;
+	margin-left: 30px;
+	margin-top: 37px;
+}
+#headloginr button{
+	background-color: #e0b24e;
+	margin-left: 38%;
+	margin-top: 27px; 
+}
+#headloginr strong{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#loginmid{
+	background: url(../../resto3.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+	height: 637px;
+	float: center;
+	padding-left:40%;
+}
+#loginmidusr{
+	background: url(../../resto3.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+	height: 537px;	
+}
+#loginuser{
+	color: #ffffff;
+	text-align: center;
+	margin-top: 100px;
+}
+#loginuser input{
+	color: #000000;
+	height: 40px;
+	margin-top: 10px;
+	text-align: center;
+}
+#buttonlog button{
+	margin-top: 30px;
+	margin-left: 45%;
+	color: #000000;
+	background-color: #eace44;
+	border-color: #000000;
+}
+#loginmid .thumbnail{
+	margin-top: 50%
+}
+#loginmid .thumbnail a{
+	color: #000000;
+}
+#loginmid .thumbnail h4{
+	text-align: center;
+}
+#buttonlogin button{
+	color: #000000;
+	background-color: #eace44;
+	border-color: #eace44;
+	margin-left: 40%
+}
+#loginmid .caption{
+	color: #000000;
+}
+
+#baris-dua	{
+	background-color: #696969;
+	height: 50px;
+	color: #e0b24e;
+	padding-top: 10px;
+	font-size: 20px;
+
+}
+#menu a	{
+float: right;
+	list-style: none;
+	width: 10%;
+	font-size: 30px;
+	border-right: 1px solid #030303;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: agency fb;
+	padding-left: 20px;
+	line-height: 35px;
+
+}
+
+#menu a:hover{
+background-color: #2e75ef;
+
+
+}
+
+#leftbar ul ul{
+	position:absolute;visibility:hidden;
+	} 
+#leftbar ul li:hover ul{
+	visibility:visible;
+	}
+#myModal{
+	color: #000000;
+}
+#myModal button{
+	margin-top: 5%;
+}
+#tabeltransaksi{
+	padding-left: 200px;
+	text-align: center;
+	color:#2e75ef;
+}
+#tabeltransaksi th{
+	text-align: center;
+}
+#rightmidtransaksi li{
+	list-style-type: none;
+	color:#2e75ef;
+}
+#rightmidtransaksi .buttontambah button{
+	color: #000000;
+	background-color: #eace44;
+}
+#rightmidtransaksi .buttontambah2 button{
+	color: #000000;
+	background-color: #eace44;
+	margin-top: 20px;
+	margin-left: 70%;
+}
+#rightmidtransaksi {
+	background:url(../../img/bgkonten.jpg) no-repeat scroll;
+	background-size: 100% 100%;
+	height:512px;
+	padding-top:20px;
+}
+#rightmidtransaksi h2{
+	color:#ffffff;
+	padding-left:150px;
+}
+#rightmidtransaksi h4{
+float: right;
+font-weight:bold;
+font-size:17px;
+}

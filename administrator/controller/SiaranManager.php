@@ -22,7 +22,7 @@ class SiaranManager extends Controller
 		$id= $_GET['id'];
 		include_once 'model/Supplier.php';
 		$mb= new Supplier();
-		$data['berita']=$mb->ambilSupplierSpesifik($id);
+		$data = $mb->ambilSupplierSpesifik($id);
 		return $data;
 	}
 }
