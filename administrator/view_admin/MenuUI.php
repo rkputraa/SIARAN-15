@@ -64,6 +64,15 @@ class MenuUI extends View
 		$this->end();
 	}
 
+	public function aksiHapusMenu()
+	{
+		include_once 'controller/MenuControl.php';
+		$bm= new MenuControl();
+		$bm->hapusMenu();
+		// include_once 'pages/pesansukses.php';
+		$this->end();
+	}
+
 
 }
 

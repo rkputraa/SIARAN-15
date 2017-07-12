@@ -26,7 +26,7 @@ $i = 1;
 			<button type="button" class="btn btn-info">Lihat</button>
 			<a href="ubah_menu.php?id=<?php echo $ib['id_item']?>">
 			<button type="button" class="btn btn-warning">Edit</button></a>
-		<a href="#">
+		<a href=""hapus_menu.php?id=<?= $ib['id_item'] ?>">
 			<button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td>
 		</tr>
 		<?php 
