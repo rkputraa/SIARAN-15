@@ -27,7 +27,7 @@
 			<td><?= $su['telepon'] ?></td>
 			<td><?= $su['id_user'] ?></td>
 			<td><a href="editdatasupplier.php?id=<?= $su['id_supplier'] ?>"><button type="button" class="btn btn-warning">Edit</button></a>
-			<a href="#"><button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td></a>
+			<a href="delete_sup.php?id=<?= $su['id_supplier'] ?>"><button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td></a>
 		</tr>
 		<?php 
 		$i++;

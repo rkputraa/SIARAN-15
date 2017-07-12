@@ -38,5 +38,14 @@ class SiaranManager extends Controller
 		
 		return true;
 	}
+	public function hapusSupplier()
+	{
+		include_once 'model/Supplier.php';
+		$mb= new Supplier();
+		$id_supplier = $_GET['id'];
+		$mb->hapusSupplier($id_supplier);
+		
+		return true;
+	}
 }
 ?>

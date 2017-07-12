@@ -71,5 +71,20 @@ class Supplier extends Model
 			echo $e->getMessage(); 
 		}
 	}
+	public function hapusSupplier($id_supplier)
+	{
+		
+		
+		try {
+			$stmt = $this->db->prepare("DELETE FROM supplier WHERE id_supplier=:id_supplier");
+		   $stmt->bindparam(":id_supplier",$id_supplier);
+			$stmt->execute();
+			echo "Berhasil diDelete";
+			
+		}
+		catch(PDOException $e) {
+			echo $e->getMessage(); 
+		}
+	}
 }
 ?>

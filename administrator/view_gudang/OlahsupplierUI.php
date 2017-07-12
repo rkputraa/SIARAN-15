@@ -44,6 +44,14 @@ class OlahsupplierUI extends View
 		// include_once 'pages/pesansukses.php';
 		$this->end();
 	}
+	public function aksiHapusSupplier()
+	{
+		include_once 'controller/SiaranManager.php';
+		$bm= new SiaranManager();
+		$bm->hapusSupplier();
+		// include_once 'pages/pesansukses.php';
+		$this->end();
+	}
 }
 
  ?>
