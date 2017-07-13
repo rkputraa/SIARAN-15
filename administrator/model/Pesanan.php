@@ -10,7 +10,7 @@ class Pesanan extends Model
 	public $jumlah_harga;
 	public $jumlah_bayar;
 	public $id_member;
-	public $user;
+	public $id_user;
 
 	public function getDataLaporan()
 	{
@@ -20,6 +20,18 @@ class Pesanan extends Model
 
 		return $data;
 	}
+
+	public function getDataLaporanSpesifik()
+	{
+		$query = $this->db->prepare("SELECT * FROM pesanan WHERE tanggal=:tanggal");
+		$query -> bindparam(":tanggal",$id);
+		$query -> execute();
+		$data = $query->fetchAll();
+
+		return $data;
+	}
+
+
 
 }
 

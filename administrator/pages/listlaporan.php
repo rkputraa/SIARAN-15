@@ -65,16 +65,12 @@
 	  <option>2017</option>
 </select>
   </div>
-  <a href="mnjpendapatanperharitabel.html"><button type="button" class="btn btn-default">Tampilkan</button></a>
+  <a href="aksi_laporan.php"><button type="button" class="btn btn-default">Tampilkan</button></a>
 </form><br>
   <div class="form-group">
 <table class="table table-bordered" width="100% cellspacing="0" cellpadding="10" border-color="white">
 
-<?php 
-	$sql ='SELECT id_pesanan, id_member, SUM(jumlah_bayar) AS Total Pendapatan FROM 'pesanan'GROUP BY id_pesanan, id_member';
-	$stmt = $pdo->prepare($sql);
-	$stmt -> execute();
-?>
+
 		<tr>
 		<th align="center">No</th>
 		<th>Id Pesanan</th>
@@ -84,10 +80,6 @@
 <?php 
 $i = 1;
  foreach ($isi_lap as $il) { 
-$total_bayar = 0;
-while ($row = $stmt -> fetch()) {
-	
-}
  	?>
 		<tr>
 			<td><?= $i ?></td>
@@ -95,7 +87,7 @@ while ($row = $stmt -> fetch()) {
 			<td><?= $il['id_member']?></td>
 			<td><?= $il['jumlah_harga']?></td>
 		</tr>
-		$total_bayar += $row['Total Bayar']
+
 		<?php 
 		$i++;
 		} ?>

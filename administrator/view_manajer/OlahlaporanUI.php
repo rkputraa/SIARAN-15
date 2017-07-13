@@ -15,6 +15,17 @@ class OlahlaporanUI extends View
 		include_once 'pages/listlaporan.php';
 		$this->end();
 	}
+
+	public function tampilLaporanSpesifik()
+	{
+		include_once 'model/Pesanan.php';
+		$lap = new Pesanan();
+		$isi_lap = $lap->getDataLaporanSpesifik();
+		include_once 'pages/listlaporan.php';
+		$this->end();
+	}
+
+
 }
 
  ?>

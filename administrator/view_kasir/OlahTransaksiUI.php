@@ -21,5 +21,6 @@ class OlahTransaksiUI extends View
 		$this->end();
 	}
 
+
 }
 ?>
