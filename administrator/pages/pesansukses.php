@@ -1,3 +1,1 @@
-<?php 
-header('Location: lihat_data_menu.php');
-?>
+<h1>Selamat Input Sukses lohhhhh</h1>
