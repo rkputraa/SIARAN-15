@@ -14,8 +14,8 @@ class OlahsupplierUI extends View
 
 	public function inputSupplier()
 	{
-		include_once 'controller/SiaranManager.php';
-		$bm = new SiaranManager();
+		include_once 'controller/DataSupplierControl.php';
+		$bm = new DataSupplierControl();
 		$pesan = $bm->setSupplier();
 		include_once 'pages/pesansukses.php';
 		$this->end();
@@ -30,24 +30,24 @@ class OlahsupplierUI extends View
 	}
 	public function tampilFormEdit()
 	{
-		include_once 'controller/SiaranManager.php';
-		$bm = new SiaranManager();
+		include_once 'controller/DataSupplierControl.php';
+		$bm = new DataSupplierControl();
 		$data = $bm->getDataUntukPerubahan();
 		include_once 'pages/formeditsupplier.php';
 		$this->end();
 	}
 	public function aksiUbahSupplier()
 	{
-		include_once 'controller/SiaranManager.php';
-		$bm= new SiaranManager();
+		include_once 'controller/DataSupplierControl.php';
+		$bm= new DataSupplierControl();
 		$bm->ubahSupplier();
 		// include_once 'pages/pesansukses.php';
 		$this->end();
 	}
 	public function aksiHapusSupplier()
 	{
-		include_once 'controller/SiaranManager.php';
-		$bm= new SiaranManager();
+		include_once 'controller/DataSupplierControl.php';
+		$bm= new DataSupplierControl();
 		$bm->hapusSupplier();
 		// include_once 'pages/pesansukses.php';
 		$this->end();

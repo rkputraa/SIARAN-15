@@ -3,7 +3,7 @@
 * 
 */
 include_once 'Controller.php';
-class SiaranManager extends Controller
+class DataSupplierControl extends Controller
 {
 	public function setSupplier()
 	{
