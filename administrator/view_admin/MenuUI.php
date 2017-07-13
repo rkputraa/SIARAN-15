@@ -18,6 +18,19 @@ class MenuUI extends View
 		$this->end();
 	}
 
+	public function tampilDetailMenu()
+	{
+		
+		include_once 'model/Menu.php';
+
+		$mn = new Menu();
+
+		$isi_detailmenu = $mn->getDataDetailMenu($_GET['id']);
+
+		include_once 'pages/detailmenu.php';
+		$this->end();
+	}
+
 	public function tampilFormMenu()
 	{
 		 include_once 'controller/MenuControl.php';
@@ -69,7 +82,7 @@ class MenuUI extends View
 		include_once 'controller/MenuControl.php';
 		$bm= new MenuControl();
 		$bm->hapusMenu();
-		// include_once 'pages/pesansukses.php';
+		include_once 'pages/pesansukses.php';
 		$this->end();
 	}
 
