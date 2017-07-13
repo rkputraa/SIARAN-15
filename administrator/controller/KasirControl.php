@@ -13,13 +13,5 @@ class KasirControl extends Controller
 		$daftar_menu = $men->getDaftarMenu();
 		return $daftar_menu;
 	}
-
-	public function ()
-	{
-		include_once 'model/JenisMenu.php';
-		$jm  = new JenisMenu();
-		$daftar_jenismenu = $jm->getDaftarJenisMenu();
-		return $daftar_jenismenu;
-	}
 }
 ?>

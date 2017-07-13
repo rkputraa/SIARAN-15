@@ -5,7 +5,7 @@ require_once 'View.php';
 */
 class OlahTransaksiUI extends View
 {
-		public function lihatDaftarMenu()
+		public function lihatFormTransaksi()
 	{
 		include_once 'controller/KasirControl.php';
 		$bm = new KasirControl();
@@ -13,7 +13,5 @@ class OlahTransaksiUI extends View
 		include_once 'pages/formtrans.php';
 		$this->end();
 	}
-
-	
 }
 ?>
