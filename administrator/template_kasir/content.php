@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Sistem Informasi Restoran</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootcustom.css">
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="container-fluid">
-<div class="row">
-	<div id="kepalakiri" class="col-md-2">
-		<img src="img/logo.png"></img>
-	</div>
-	<div id="kepalakanan" class="col-md-10">
-		<h2><strong>Sistem Informasi Restoran</strong></h2>
-		<h2><strong>WAR RESTO</h2>
-	</div>
-</div>
-<div id="baris-dua" class="row">
-			<div id="menu" class="col-md-12">
-					<a href="index.html">Logout</a>
-					<a href="profilkasir.html">Profil</a>
-			</div>
-		</div>
-<div class="row">
-	<div class="col-md-2" id="leftbar">
-				<ul class="nav nav-pills nav-stacked" role="tablist">
-				    <li class="active"><a href="#">Halaman Kasir</a></li>
-				    <li><a href="datamemberkasir.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Olah Data Member</a></li>
-				    <li><a href="transaksikasir.html"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> Transaksi</a></li>
-
-				</ul>				
-			</div>
-	<div id="rightmidtransaksi" class="col-md-10">
+<div id="rightmidtransaksi" class="col-md-10">
 		<h2>Transaksi</h2>
 		<form>
 			<ul>
 				<li>
 					<label for="tanggal" class="col-md-2">Tanggal</label>
-					<input type="date" name="tanggal"></li
+					<input type="date" name="tanggal"></li>
 				</li>
 			</ul>
 			<ul>
@@ -76,7 +41,38 @@
 			</ul>
 		</form>
 		<div class="button col-md-2 buttontambah">
-			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Tambah Item</button>
+			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Tambah Item</button><br><br>
+		</div>
+		<div id="tabeltransaksi" class="col-md-12">
+		<table border="3" cellspacing="0" cellpadding="10" border-color="white">
+		<tr>
+			<th width="50">No</th>
+			<th width="200">Nama Item</th>
+			<th width="100">Banyaknya Barang</th>
+			<th width="100">Jumlah</th>
+			<th width="100">Opsi</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Ayam Cabe ijo</td>
+			<td>2</td>
+			<td>Rp 25.000</td>
+			<td><button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td>
+		</tr>
+		<tr>
+			<td colspan="2">Jumlah Total</td>
+			<td>2</td>
+			<td>Rp. 25.000</td>
+		</tr>
+		<tr>
+			<td colspan="3">Jumlah Bayar</td>
+			<td><input type="text" name="bayar"></td>
+		</tr>
+		<tr>
+			<td colspan="3">Kembalian</td>
+			<td></td>
+		</tr>
+		</table>
 		</div>
 		<div id="myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -94,12 +90,8 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		<div class="col-md-12 buttontambah2">
+			<a href="transaksikasir.html"><button type="button" class="btn btn-info btn-md">Konfirmasi</button></a>
+		</div>
 	</div>
-	</div>
-	<div id="footer" class="col-md-12">
-		<h5>Copyright &copy; Alif, Rachmat, Wilda | Sistem Informasi 2015</h5>
-	</div>
-</div>
-</div>
-</body>
-</html>
