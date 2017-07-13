@@ -18,6 +18,16 @@ class Menu extends Model
 		return $data;
 	}
 
+public function getDataDetailMenu($id)
+	{
+		$query = $this->db->prepare("SELECT jenis_item.*, jenis_menu.* FROM jenis_item, jenis_menu WHERE jenis_item.id_jenis=jenis_menu.id_jenis and id_item=:id_item");
+		$query->bindparam(":id_item",$id);
+		$query -> execute();
+		$data = $query->fetchAll();
+
+		return $data;
+	}
+
 	public function setMenu($id_jenis,$nama_item,$harga)
 	{
 		try
@@ -77,7 +87,6 @@ catch(PDOException $e) {
 			$stmt = $this->db->prepare("DELETE FROM jenis_item WHERE id_item=:id_item");
 		   $stmt->bindparam(":id_item",$id_item);
 			$stmt->execute();
-			echo "Berhasil diDelete";
 			
 		}
 		catch(PDOException $e) {
