@@ -5,21 +5,15 @@ require_once 'View.php';
 */
 class OlahTransaksiUI extends View
 {
-
-	public function lihatFormTransaksi()
-	{
-		include_once 'pages/formtransaksi.php';
-		$this->end();
-	}
-	
-	public function lihatDaftarMenu()
+		public function lihatDaftarMenu()
 	{
 		include_once 'controller/KasirControl.php';
 		$bm = new KasirControl();
-		$list_menu = $bm->getDaftarMenu();
-		
+		$daftar_menu = $bm->getDaftarMenu();
+		include_once 'pages/formtrans.php';
 		$this->end();
 	}
 
+	
 }
 ?>
