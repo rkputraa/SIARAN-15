@@ -41,7 +41,7 @@ class OlahsupplierUI extends View
 		include_once 'controller/DataSupplierControl.php';
 		$bm= new DataSupplierControl();
 		$bm->ubahSupplier();
-		// include_once 'pages/pesansukses.php';
+		include_once 'pages/pesansukses.php';
 		$this->end();
 	}
 	public function aksiHapusSupplier()
@@ -49,7 +49,7 @@ class OlahsupplierUI extends View
 		include_once 'controller/DataSupplierControl.php';
 		$bm= new DataSupplierControl();
 		$bm->hapusSupplier();
-		// include_once 'pages/pesansukses.php';
+		include_once 'pages/pesansukses.php';
 		$this->end();
 	}
 }

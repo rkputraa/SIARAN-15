@@ -1,1 +1,3 @@
-<h1>Selamat Input Sukses lohhhhh</h1>
+<?php 
+header('Location: lihat_supplier.php');
+?>
