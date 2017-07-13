@@ -50,7 +50,7 @@ class MenuUI extends View
 		$mm = new MenuControl();
 		$pesan = $mm->setMenu();
 
-		include_once'pages/pesansukses.php';
+		include_once'pages/pesansuksesmenu.php';
 		$this->end();
 	}
 	
@@ -73,7 +73,7 @@ class MenuUI extends View
 
 		$mm = new MenuControl();
 		$mm->updateDataMenu();
-		include_once 'pages/pesansukses.php';
+		include_once 'pages/pesansuksesmenu.php';
 		$this->end();
 	}
 
