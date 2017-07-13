@@ -79,11 +79,13 @@
 			<div class="modal-content">
 				<div class="modal-body">
 					<label for="namaitem"><h4>Nama Item</h4></label><br>
-					<select name="namaitem" id="namaitem">
-					<?php foreach ($list_menu as $dm): ?>
+					<select name="nama_item" id="namaitem">
+							<?php foreach ($daftar_menu as $dm): ?>
  		<option value="<?php echo $dm['nama_item'] ?>" 
  		><?php echo $dm['nama_item']; ?></option>
  	<?php endforeach ?>
+
+
 
 					</select><br>
 					<label for="bitem"><h4>Banyaknya Item</h4></label><br>
